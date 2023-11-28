@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "827593425748",
+    "project_id": "atelier4-a-nadiri-iir5gx",
+    "storage_bucket": "atelier4-a-nadiri-iir5gx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827593425748:android:0d533f85fac30d1b9ffec1",
+        "android_client_info": {
+          "package_name": "com.example.atelier3_a_nadiri_iirg5gx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA4XFRRb5BmUXUOxoE8KApX0i8740_cGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827593425748:android:c2e8f45e294d3b819ffec1",
+        "android_client_info": {
+          "package_name": "com.example.flutter_firebase_2023"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA4XFRRb5BmUXUOxoE8KApX0i8740_cGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
