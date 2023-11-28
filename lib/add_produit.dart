@@ -70,7 +70,7 @@ class _AjoutProduitScreenState extends State<AjoutProduitScreen> {
       if (_image != null) {
         // Upload de la photo vers Cloud Storage
         Reference storageReference =
-            _storage.ref().child('chemin_de_votre_photo');
+            _storage.ref().child(_image!.path.split('/').last);
         UploadTask uploadTask = storageReference.putFile(_image!);
         TaskSnapshot taskSnapshot = await uploadTask.whenComplete(() => null);
         String photoUrl = await taskSnapshot.ref.getDownloadURL();
