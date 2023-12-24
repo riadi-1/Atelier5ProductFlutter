@@ -8,6 +8,7 @@ class Produit {
   double prix;
   String photo;
   int quantite;
+  bool adminOnly; // Champ pour spécifier si le produit est réservé aux admins
 
   Produit({
     required this.id,
@@ -17,6 +18,7 @@ class Produit {
     required this.prix,
     required this.photo,
     required this.quantite,
+    required this.adminOnly, // Ajout du champ adminOnly
   });
 
   factory Produit.fromFirestore(DocumentSnapshot doc) {
@@ -29,6 +31,8 @@ class Produit {
       prix: (data['prix'] ?? 0.0).toDouble(),
       photo: data['photo'] ?? '',
       quantite: data['quantite'] ?? 0,
+      adminOnly:
+          data['adminOnly'] ?? false, // Récupération de la valeur adminOnly
     );
   }
 
@@ -41,6 +45,7 @@ class Produit {
       'prix': prix,
       'photo': photo,
       'quantite': quantite,
+      'adminOnly': adminOnly, // Ajout du champ adminOnly
     };
   }
 }

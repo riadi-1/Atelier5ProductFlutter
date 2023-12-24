@@ -30,20 +30,19 @@ class _AjoutProduitScreenState extends State<AjoutProduitScreen> {
   // Fonction pour sélectionner une photo depuis la galerie
   Future<void> _pickImage() async {
     final ImagePicker picker = ImagePicker();
-    final XFile? pickedFile =
-        await picker.pickImage(source: ImageSource.gallery);
-    String assetImagePath =
-        'assets/images/placeholder.jpg'; // Chemin de l'image par défaut
-    File im = await getImageFileFromAssets("assets/images/placeholder.jpg");
+    try {
+      final XFile? pickedFile =
+          await picker.pickImage(source: ImageSource.gallery);
 
-    if (pickedFile != null) {
-      setState(() {
-        _image = File(pickedFile.path);
-      });
-    } else {
-      setState(() {
-        _image = im;
-      });
+      if (pickedFile != null) {
+        setState(() {
+          _image = File(pickedFile.path);
+        });
+      } else {
+        print('No image selected.');
+      }
+    } catch (e) {
+      print('Error picking image: $e');
     }
   }
 
@@ -83,6 +82,7 @@ class _AjoutProduitScreenState extends State<AjoutProduitScreen> {
           prix: prix,
           photo: photoUrl,
           quantite: quantite,
+          adminOnly: false, // You may want to set this based on user roles
         );
 
         await documentReference.set(nouveauProduit.toJson());

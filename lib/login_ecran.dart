@@ -21,7 +21,7 @@ class LoginEcran extends StatelessWidget {
             Text("Nom: ${snapshot.data!.displayName ?? ''}")
           ],
         );*/
-        return AjoutProduitScreen();
+        return ListProduits();
       },
     );
   }

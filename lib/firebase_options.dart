@@ -44,37 +44,37 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDikpAN3_uXftfzqPUux_uDkMC0a4SrpzE',
-    appId: '1:827593425748:web:72bab62bdf12332e9ffec1',
-    messagingSenderId: '827593425748',
-    projectId: 'atelier4-a-nadiri-iir5gx',
-    authDomain: 'atelier4-a-nadiri-iir5gx.firebaseapp.com',
-    storageBucket: 'atelier4-a-nadiri-iir5gx.appspot.com',
+    apiKey: 'AIzaSyAE2_vz1_MTur-TeKC1_k6xREUp_hUjKsk',
+    appId: '1:359460980716:web:f434108ec32e6b3d8ee2c9',
+    messagingSenderId: '359460980716',
+    projectId: 'atelier4-r-ouassen-iir5g3',
+    authDomain: 'atelier4-r-ouassen-iir5g3.firebaseapp.com',
+    storageBucket: 'atelier4-r-ouassen-iir5g3.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCA4XFRRb5BmUXUOxoE8KApX0i8740_cGI',
-    appId: '1:827593425748:android:c2e8f45e294d3b819ffec1',
-    messagingSenderId: '827593425748',
-    projectId: 'atelier4-a-nadiri-iir5gx',
-    storageBucket: 'atelier4-a-nadiri-iir5gx.appspot.com',
+    apiKey: 'AIzaSyBVnZfyVHGfgAZ37gJYcY0eXT9nUYKlSKg',
+    appId: '1:359460980716:android:9eef107a1143817d8ee2c9',
+    messagingSenderId: '359460980716',
+    projectId: 'atelier4-r-ouassen-iir5g3',
+    storageBucket: 'atelier4-r-ouassen-iir5g3.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDIwZieGUX4_yE3jWo7TquJd64DdqUT7qY',
-    appId: '1:827593425748:ios:faa93bd48a82a2579ffec1',
-    messagingSenderId: '827593425748',
-    projectId: 'atelier4-a-nadiri-iir5gx',
-    storageBucket: 'atelier4-a-nadiri-iir5gx.appspot.com',
-    iosBundleId: 'com.example.flutterFirebase2023',
+    apiKey: 'AIzaSyCmVtbiVUy87wZaJZZcAvL_xPIfIqWXprs',
+    appId: '1:359460980716:ios:a6a100e357ea5b408ee2c9',
+    messagingSenderId: '359460980716',
+    projectId: 'atelier4-r-ouassen-iir5g3',
+    storageBucket: 'atelier4-r-ouassen-iir5g3.appspot.com',
+    iosBundleId: 'com.example.flutterApplication1',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDIwZieGUX4_yE3jWo7TquJd64DdqUT7qY',
-    appId: '1:827593425748:ios:66ca170a1649cebd9ffec1',
-    messagingSenderId: '827593425748',
-    projectId: 'atelier4-a-nadiri-iir5gx',
-    storageBucket: 'atelier4-a-nadiri-iir5gx.appspot.com',
-    iosBundleId: 'com.example.flutterFirebase2023.RunnerTests',
+    apiKey: 'AIzaSyCmVtbiVUy87wZaJZZcAvL_xPIfIqWXprs',
+    appId: '1:359460980716:ios:a6a100e357ea5b408ee2c9',
+    messagingSenderId: '359460980716',
+    projectId: 'atelier4-r-ouassen-iir5g3',
+    storageBucket: 'atelier4-r-ouassen-iir5g3.appspot.com',
+    iosBundleId: 'com.example.flutterApplication1',
   );
 }
